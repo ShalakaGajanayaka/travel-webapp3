@@ -1,0 +1,39 @@
+
+
+.floating-chat-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff0000; /* Red background */
+    color: white; /* White text */
+    font-size: 16px; /* Adjust text size */
+    padding: 10px 20px; /* Adjust padding for size */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.floating-chat-button:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+.floating-chat-button:active {
+    transform: scale(0.95); /* Slight shrink on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.floating-chat-button .icon {
+    display: inline-block;
+    margin-left: 10px; /* Spacing between icon and text */
+    width: 20px; /* Icon width */
+    height: 20px; /* Icon height */
+    background-image: url('./assets/images/chat.svg'); /* Replace with your icon path */
+    background-size: cover; /* Ensure icon fits the area */
+}
+
+.floating-chat-button .label {
+    font-family: Arial, sans-serif; /* Ensure clean, readable font */
+}
